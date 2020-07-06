@@ -166,10 +166,10 @@ with Pool(3) as q:
     Nvect = q.starmap(saveNormVector,[(21,scale),(22,scale),(23,scale)])
 #NVect = saveNormVector(9,8)
 """
-scale = 9
+scale = 8
 
-cosa1 = np.array(sio.loadmat("data/2.mat")['x'])
-cosa2 = np.array(sio.loadmat("data/3.mat")['x'])
+cosa1 = np.array(sio.loadmat("data/80.mat")['x'])
+cosa2 = np.array(sio.loadmat("data/48.mat")['x'])
 
 Dis1 = len(cosa1)
 Dis2 = len(cosa2)

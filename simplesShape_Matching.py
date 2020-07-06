@@ -8,7 +8,6 @@ import networkx as nx
 from multiprocessing import Pool
 
 
-def findAugmPathBreadth(Gf):
     level = [(0,-1)]
     marked = [(0,-1)]
     C = [0]
@@ -18,6 +17,7 @@ def findAugmPathBreadth(Gf):
             for i in range(len(Gf[0])):
                 if( Gf[u[0]][i] != 0 and i not in C ):
                     if( i == len(Gf[0])-1 ):
+                        def findAugmPathBreadth(Gf):
                         P = [i]
                         aux = u[0]
                         while( aux != -1 ):
